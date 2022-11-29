@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".DashBoardSinggerActivity">
+    tools:context=".ListFish">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Singer List"
+        android:text="Fish List"
         android:gravity="center"
         android:textSize="18sp"
         android:fontFamily="@font/font"/>
@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="@color/gray"
-                android:text="Theo quốc gia"
+                android:text="Theo màu sắc"
                 android:fontFamily="@font/a"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -56,13 +56,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <GridView
-            android:id="@+id/lsvcasy"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lsvca"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:numColumns="1"
             android:scrollbars="none" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right">
 
+                <ImageView
+                    android:id="@+id/add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_40px" />
+            </RelativeLayout>
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

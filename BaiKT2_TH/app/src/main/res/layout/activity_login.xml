@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/passdk"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -26,12 +26,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/emaildk" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="432dp"
-        android:layout_height="340dp"
+        android:layout_height="208dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/emaildk"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginEnd="32dp"
@@ -71,13 +71,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/passdk"
         app:srcCompat="@drawable/btn_arraw1" />
 
     <LinearLayout
@@ -91,10 +91,10 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/button">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
+            android:id="@+id/buttonfb"
             style="@android:style/Widget.Button"
             android:layout_width="0dp"
             android:layout_height="55dp"
@@ -125,7 +125,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewlg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Are you new user? SignUp?"
