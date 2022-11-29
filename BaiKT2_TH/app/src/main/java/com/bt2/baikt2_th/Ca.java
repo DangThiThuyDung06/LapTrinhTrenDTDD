@@ -1,32 +1,17 @@
 package com.bt2.baikt2_th;
 
 public class Ca {
-    private String tenkhoahoc, tenthuonggoi, dactinh, mausac;
-    private int anh;
-    private float star;
+    String tenkhoahoc, tenthuonggoi, dactinh, mausac, hinhanh;
 
-    public Ca() {
-    }
-
-    @Override
-    public String toString() {
-        return "Ca{" +
-                "tenkhoahoc='" + tenkhoahoc + '\'' +
-                ", tenthuonggoi='" + tenthuonggoi + '\'' +
-                ", dactinh='" + dactinh + '\'' +
-                ", mausac='" + mausac + '\'' +
-                ", anh=" + anh +
-                ", star=" + star +
-                '}';
-    }
-
-    public Ca(String tenkhoahoc, String tenthuonggoi, String dactinh, String mausac, int anh, float star) {
+    public Ca(String tenkhoahoc, String tenthuonggoi, String dactinh, String mausac, String hinhanh) {
         this.tenkhoahoc = tenkhoahoc;
         this.tenthuonggoi = tenthuonggoi;
         this.dactinh = dactinh;
         this.mausac = mausac;
-        this.anh = anh;
-        this.star = star;
+        this.hinhanh = hinhanh;
+    }
+
+    public Ca() {
     }
 
     public String getTenkhoahoc() {
@@ -61,19 +46,11 @@ public class Ca {
         this.mausac = mausac;
     }
 
-    public int getAnh() {
-        return anh;
+    public String getHinhanh() {
+        return hinhanh;
     }
 
-    public void setAnh(int anh) {
-        this.anh = anh;
-    }
-
-    public float getStar() {
-        return star;
-    }
-
-    public void setStar(float star) {
-        this.star = star;
+    public void setHinhanh(String hinhanh) {
+        this.hinhanh = hinhanh;
     }
 }
